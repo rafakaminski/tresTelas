@@ -1,12 +1,14 @@
-.body{
-  background-image: url("/bg.jpg");
+body{
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .calculator {
     max-width: 300px;
     margin: 0 auto;
     margin-top: 100px;
-    border: 1px solid #ccc;
+    
 }
 
 .formulario {
@@ -21,4 +23,16 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
+}
+
+.container{ 
+  background-color: #ffff;
+  padding: 16px;
+  
+  border-radius: 10px;
+
+}
+
+#saida{
+  background-color: #ffff;
 }

@@ -1,100 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Trabalho final</title>
 </head>
+
 <body class="container">
-    
-  <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
-    <ul class="navbar-nav mx-auto">
-      <a href=calculadora.html class="nav-item nav-link active" href="#">Calculadora</a>
-      <a href=imc.html class="nav-item nav-link active" href="#">Calcular IMC</a>
-      <a href=json.html class="nav-item nav-link active" href="#">Gerador JSON</a>
-    </ul>
-  </nav>
-  
-    
-        <div class="calculator">
-          <div class="container">
+
+    <nav class="navbar navbar-expand navbar-light bg-light fixed-top">
+        <ul class="navbar-nav mx-auto">
+            <a href=calculadora.html class="nav-item nav-link active" href="#">Calculadora</a>
+            <a href=imc.html class="nav-item nav-link active" href="#">Calcular IMC</a>
+            <a href=json.html class="nav-item nav-link active" href="#">Gerador JSON</a>
+        </ul>
+    </nav>
+
+
+    <div class="calculator">
+        <div class="container">
             <h1>Calculadora</h1>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-12">
                     <input type="text" id="display" class="form-control" readonly>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('7')">7</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('7')">7</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('8')">8</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('8')">8</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('9')">9</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('9')">9</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-secondary btn-block" onclick="addToDisplay('+')">+</button>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('4')">4</button>
-                </div>
-                <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('5')">5</button>
-                </div>
-                <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('6')">6</button>
-                </div>
-                <div class="col-md-3">
-                    <button class="btn btn-secondary btn-block" onclick="addToDisplay('-')">-</button>
+                    <button class="btn btn-secondary btn-block w-100" onclick="addToDisplay('+')">+</button>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('1')">1</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('4')">4</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('2')">2</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('5')">5</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('3')">3</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('6')">6</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-secondary btn-block" onclick="addToDisplay('*')">*</button>
+                    <button class="btn btn-secondary btn-block w-100" onclick="addToDisplay('-')">-</button>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('0')">0</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('1')">1</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-primary btn-block" onclick="addToDisplay('.')">.</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('2')">2</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-success btn-block" onclick="calculate()">=</button>
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('3')">3</button>
                 </div>
                 <div class="col-md-3">
-                    <button class="btn btn-secondary btn-block" onclick="addToDisplay('/')">/</button>
+                    <button class="btn btn-secondary btn-block w-100" onclick="addToDisplay('*')">*</button>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-3">
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('0')">0</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary btn-block w-100" onclick="addToDisplay('.')">.</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-success btn-block w-100" onclick="calculo()">=</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary btn-block w-100" onclick="addToDisplay('/')">/</button>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-12">
-                    <button class="btn btn-danger btn-block" onclick="clearDisplay()">Limpar</button>
+                    <button class="btn btn-danger btn-block w-100" onclick="limpaDisplay()">Limpar</button>
                 </div>
-          </div>
+            </div>
 
         </div>
-  
+
 
 </body>
 <script src="/script.js"></script>
+
 </html>
